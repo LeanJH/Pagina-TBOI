@@ -1,0 +1,204 @@
+@font-face{
+    font-family: "Upheaval";
+    src: url("fonts/upheavtt.ttf") format("truetype");
+}
+
+body{
+    position: relative;
+    background-image: url("https://4kwallpapers.com/images/walls/thumbs_2t/16703.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: "Upheaval", Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+body:not(.login-page)::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.70);
+    z-index: -1;
+}
+
+.logo{
+    width: 220px;
+}
+
+.isaac{
+    width: 200px;
+    max-width: 100%;
+}
+
+.card{
+    border: 2px solid #550000;
+    overflow: hidden;
+    background-color: rgba(33, 37, 41, 0.95) !important;
+    backdrop-filter: blur(4px);
+}
+
+.card p{
+    line-height: 1.8;
+    font-size: 1.2rem;
+}
+
+.card h2{
+    font-size: 2rem;
+}
+
+.carousel-img{
+    height: 450px;
+    object-fit: cover;
+}
+
+.btn{
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+}
+
+footer{
+    font-size: 1.1rem;
+    background-color: rgba(33, 37, 41, 0.95) !important;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+.login-nav{
+    background-color: #b00000;
+    color: white !important;
+    border-radius: 6px;
+    margin-left: 10px;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    transition: 0.3s;
+}
+
+.login-nav:hover{
+    background-color: #d80000;
+    transform: translateY(-2px);
+}
+
+.navbar{
+    background-color: rgba(33, 37, 41, 0.95) !important;
+    backdrop-filter: blur(5px);
+}
+
+.login-page{
+    min-height: 100vh;
+    background-image: url("https://4kwallpapers.com/images/walls/thumbs_2t/16703.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.login-page::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 0;
+}
+
+.login-page .container-fluid{
+    position: relative;
+    z-index: 1;
+}
+
+.login-logo{
+    width: 900px;
+    max-width: 100%;
+    filter: drop-shadow(0 0 20px rgba(0,0,0,0.8));
+}
+
+.login-paper{
+    width: 450px;
+    max-width: 95%;
+    background-color: rgba(235,230,230,0.95);
+    padding: 60px 40px;
+    border: 8px solid #a0a0a0;
+    box-shadow: 0 0 40px rgba(0,0,0,0.8);
+    color: #000;
+    transform: rotate(-1deg);
+}
+
+.login-title{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 50px;
+    color: #000;
+}
+
+.login-paper label{
+    color: #000;
+    font-size: 1.1rem;
+}
+
+.login-paper .form-control{
+    border-radius: 0;
+    border: 2px solid #888;
+}
+
+.login-paper .form-control:focus{
+    box-shadow: none;
+    border-color: #b00000;
+}
+
+.forgot-link{
+    color: #444;
+    text-decoration: underline;
+}
+
+.forgot-link:hover{
+    color: #000;
+}
+
+@media (max-width: 992px){
+
+    .login-logo{
+        width: 500px;
+        margin-bottom: 30px;
+    }
+
+    .login-paper{
+        transform: none;
+    }
+
+    .carousel-img{
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px){
+
+    .logo{
+        width: 160px;
+    }
+
+    .card h2{
+        font-size: 1.5rem;
+    }
+
+    .card p{
+        font-size: 1rem;
+    }
+
+    .carousel-img{
+        height: 220px;
+    }
+
+    .login-title{
+        font-size: 2rem;
+    }
+}
